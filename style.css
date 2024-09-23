@@ -1,0 +1,30 @@
+@import(url"https://fonts.google.com/specimen/Epilogue");
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 41%);
+}
+main{
+  display: flex;
+}
+nav{
+  color:hsl(0, 0%, 41%) ;
+}
+.register{
+border: 1px hsl(0, 0%, 41%) solid 5px;
+}
+h2{
+font-weight: 500;
+}
+.para{
+  color: hsl(0, 0%, 41%);
+}
+button{
+  color: white;
+  background: hsl(0, 0%, 8%);
+  padding: 2rem 4rem;
+  border-radius: 7px;
+}
