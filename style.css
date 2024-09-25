@@ -1,4 +1,4 @@
-@import(url"https://fonts.google.com/specimen/Epilogue");
+@import url("https://fonts.google.com/specimen/Epilogue");
 
 body{
   margin: 0;
@@ -10,11 +10,24 @@ body{
 main{
   display: flex;
 }
-nav{
+nav, a{
   color:hsl(0, 0%, 41%) ;
+  text-decoration: none;
+  font-weight: 600;
+}
+a:hover{
+  color: black;
+}
+.navbar p{
+  font-weight: 600;
+}
+.navbar{
+  
 }
 .register{
-border: 1px hsl(0, 0%, 41%) solid 5px;
+  display: inline;
+border: 1px hsl(0, 0%, 41%) solid ;
+padding: 5px 8px;
 }
 h2{
 font-weight: 500;
@@ -25,6 +38,6 @@ font-weight: 500;
 button{
   color: white;
   background: hsl(0, 0%, 8%);
-  padding: 2rem 4rem;
+  padding: 1rem 2rem;
   border-radius: 7px;
 }
