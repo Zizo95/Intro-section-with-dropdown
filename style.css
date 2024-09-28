@@ -21,8 +21,9 @@ a:hover{
 .navbar p{
   font-weight: 600;
 }
-.navbar{
-  
+header{
+  display:flex ;
+  justify-content: space-around;
 }
 .register{
   display: inline;
