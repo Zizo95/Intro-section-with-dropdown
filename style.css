@@ -9,36 +9,120 @@ body{
 }
 main{
   display: flex;
+  
+}
+header img{
+  align-self: flex-start;
+  margin-top: 0.9rem;
 }
 nav, a{
   color:hsl(0, 0%, 41%) ;
   text-decoration: none;
   font-weight: 600;
+  margin-left: 2rem;
+}
+nav{
+  margin-top: 0.2rem;
+  margin-right: 30rem;
 }
 a:hover{
   color: black;
-}
-.navbar p{
-  font-weight: 600;
 }
 header{
   display:flex ;
   justify-content: space-around;
 }
+
 .register{
   display: inline;
 border: 1px hsl(0, 0%, 41%) solid ;
 padding: 5px 8px;
+
 }
-h2{
-font-weight: 500;
+h1{
+  color: black;
+font-weight: 800;
+font-size: 3rem;
 }
-.para{
+section p{
+  width: 50%;
   color: hsl(0, 0%, 41%);
+  margin-bottom: 3rem;
 }
 button{
   color: white;
   background: hsl(0, 0%, 8%);
-  padding: 1rem 2rem;
-  border-radius: 7px;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 6rem;
+}
+figure img{
+  margin-right: 3rem;
+}
+figure{
+  margin-left: 0rem;
+}
+section{
+  margin-top: 10rem;
+  margin-left: 12rem;
+}
+.section{
+  margin-top: 5rem;
+  margin-right: 12rem;
+}
+.icon-arrow-down{
+  display: none;
+}
+ul{
+  display: none;
+  position: absolute;
+   left:10rem ;
+}
+li{
+  list-style: none;
+ padding: 5px ;
+ background: #ffffff; 
+}
+ol{
+ display: none;
+  position: absolute;
+  left: 20rem;
+}
+.menu{
+  display: none;
+}
+@media screen and (max-width:1200px) {
+  ol{
+left: 20rem;
+  }
+  ul{
+left:10rem ;
+  }
+  figure img{
+    margin-right: 1rem;
+  }
+  section p{
+    width: 70%;
+  }
+  section{
+    margin-left: 5rem;
+  }
+  .section{
+    margin-right: 5rem;
+  }
+  .login{
+    margin-right: 5rem;
+  }
+  nav{
+    margin-right: 17rem;
+  }
+}
+@media screen and (max-width:941px) {
+  .menu{
+    display: inline;
+    margin-left: 3rem;
+  }
+  nav{
+   display: inline-block;
+  }
 }
