@@ -6,6 +6,7 @@ body{
   box-sizing: border-box;
   background-color: hsl(0, 0%, 98%);
   color: hsl(0, 0%, 41%);
+  font-family: "Epilogue";
 }
 main{
   display: flex;
@@ -13,7 +14,7 @@ main{
 }
 header img{
   align-self: flex-start;
-  margin-top: 0.9rem;
+  margin-top: 10px;
 }
 nav, a{
   color:hsl(0, 0%, 41%) ;
@@ -21,8 +22,11 @@ nav, a{
   font-weight: 600;
   margin-left: 2rem;
 }
+.login{
+  margin-top: 0.5rem; 
+}
 nav{
-  margin-top: 0.2rem;
+ margin-top: 5px;
   margin-right: 30rem;
 }
 a:hover{
@@ -37,7 +41,7 @@ header{
   display: inline;
 border: 1px hsl(0, 0%, 41%) solid ;
 padding: 5px 8px;
-
+margin-top: 0.5rem;
 }
 h1{
   color: black;
@@ -88,15 +92,21 @@ ol{
   position: absolute;
   left: 20rem;
 }
+.close-menu{
+  display: none;
+}
 .menu{
   display: none;
 }
-@media screen and (max-width:1200px) {
+.small-back{
+  display: none;
+}
+@media screen and (max-width:1017px) {
   ol{
-left: 20rem;
+left: 11rem;
   }
   ul{
-left:10rem ;
+left:4rem ;
   }
   figure img{
     margin-right: 1rem;
@@ -117,12 +127,60 @@ left:10rem ;
     margin-right: 17rem;
   }
 }
-@media screen and (max-width:941px) {
+@media screen and (max-width:935px) {
+  
+  nav{
+ margin-right: 5rem;
+  }
+  ol{
+    left: 13rem;
+      }
+      ul{
+    left:5rem ;
+      }
+      .register{
+        margin-right: 3rem;
+      }
+      .section img{
+        width: 350px;
+      }
+    .section{
+      margin-right: 2rem;
+    }
+    section{
+      margin-left: 2rem;
+    }
+}
+@media screen and (max-width:800px) {
+  main{
+    flex-direction: column-reverse;
+  }
+  .section img{
+    width: 400px;
+    margin-top: 2rem;
+  }
+  section{
+    margin-top: 3rem;
+  }
   .menu{
-    display: inline;
-    margin-left: 3rem;
+    display: block;
+  
+  }
+  .login, .register{
+    display: none;
   }
   nav{
-   display: inline-block;
+    display: none;
+  }
+  
+  nav, .login, .register{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+   height: 50%;
+   
+   flex-direction: column;
+   
   }
 }
