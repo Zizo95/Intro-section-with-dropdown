@@ -159,7 +159,7 @@ left:4rem ;
     flex-direction: column-reverse;
   }
   .section img{
-    width: 400px;
+    width: 500px;
     margin-top: 2rem;
   }
   section{
@@ -197,7 +197,10 @@ left:4rem ;
     top: 100%;
     left: -10px;
   }
-
+  ol a{
+    top: 2rem;
+    right: 2rem;
+  }
   }
   
 
